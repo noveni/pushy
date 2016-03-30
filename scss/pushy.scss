@@ -3,10 +3,15 @@
 * https://github.com/christophery/pushy/
 * by Christopher Yee */
 
-$menu_width:        200px;
-$bg_color:          #191918;
-$a_color:           #b3b3b1;
-$a_hover_color:     #FFF;
+$pushy_menu_width:              200px !default;
+$pushy_menu_background_color:   #191918 !default;
+$pushy_link_color:              #b3b3b1 !default;
+$pushy_link_hover_color:        #FFF !default;
+
+$menu_width:                    $pushy_menu_width;
+$bg_color:                      $pushy_menu_background_color;
+$a_color:                       $pushy_link_color;
+$a_hover_color:                 $pushy_link_hover_color;
 
 /* Menu Appearance */
 

@@ -3,7 +3,7 @@
 * https://github.com/christophery/pushy/
 * by Christopher Yee */
 /* Menu Appearance */
-/* line 13, ../scss/pushy.scss */
+/* line 18, ../scss/pushy.scss */
 .pushy {
   position: fixed;
   width: 200px;
@@ -15,54 +15,54 @@
   visibility: hidden;
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */ }
-  /* line 24, ../scss/pushy.scss */
+  /* line 29, ../scss/pushy.scss */
   .pushy a {
     display: block;
     color: #b3b3b1;
     padding: 15px 30px;
     text-decoration: none;
     outline: 0; }
-  /* line 32, ../scss/pushy.scss */
+  /* line 37, ../scss/pushy.scss */
   .pushy a:hover {
     color: #FFF; }
-  /* line 36, ../scss/pushy.scss */
+  /* line 41, ../scss/pushy.scss */
   .pushy ul:first-child {
     margin-top: 10px; }
-  /* line 40, ../scss/pushy.scss */
+  /* line 45, ../scss/pushy.scss */
   .pushy.pushy-left {
     left: 0; }
-  /* line 44, ../scss/pushy.scss */
+  /* line 49, ../scss/pushy.scss */
   .pushy.pushy-right {
     right: 0; }
 
 /* Menu Movement */
-/* line 51, ../scss/pushy.scss */
+/* line 56, ../scss/pushy.scss */
 .pushy-left {
   -webkit-transform: translate3d(-200px, 0, 0);
   -ms-transform: translate3d(-200px, 0, 0);
   transform: translate3d(-200px, 0, 0); }
 
-/* line 58, ../scss/pushy.scss */
+/* line 63, ../scss/pushy.scss */
 .pushy-open-left #container,
 .pushy-open-left .push {
   -webkit-transform: translate3d(200px, 0, 0);
   -ms-transform: translate3d(200px, 0, 0);
   transform: translate3d(200px, 0, 0); }
 
-/* line 66, ../scss/pushy.scss */
+/* line 71, ../scss/pushy.scss */
 .pushy-right {
   -webkit-transform: translate3d(200px, 0, 0);
   -ms-transform: translate3d(200px, 0, 0);
   transform: translate3d(200px, 0, 0); }
 
-/* line 73, ../scss/pushy.scss */
+/* line 78, ../scss/pushy.scss */
 .pushy-open-right #container,
 .pushy-open-right .push {
   -webkit-transform: translate3d(-200px, 0, 0);
   -ms-transform: translate3d(-200px, 0, 0);
   transform: translate3d(-200px, 0, 0); }
 
-/* line 83, ../scss/pushy.scss */
+/* line 88, ../scss/pushy.scss */
 .pushy-open-left .pushy,
 .pushy-open-right .pushy {
   -webkit-transform: translate3d(0, 0, 0);
@@ -70,18 +70,18 @@
   transform: translate3d(0, 0, 0); }
 
 /* Menu Transitions */
-/* line 92, ../scss/pushy.scss */
+/* line 97, ../scss/pushy.scss */
 #container,
 .pushy,
 .push {
   transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
 
 /* Site Overlay */
-/* line 100, ../scss/pushy.scss */
+/* line 105, ../scss/pushy.scss */
 .site-overlay {
   display: none; }
 
-/* line 106, ../scss/pushy.scss */
+/* line 111, ../scss/pushy.scss */
 .pushy-open-left .site-overlay,
 .pushy-open-right .site-overlay {
   display: block;
@@ -106,20 +106,20 @@
   100% {
     opacity: 1; } }
 /* Submenu Appearance */
-/* line 132, ../scss/pushy.scss */
+/* line 137, ../scss/pushy.scss */
 .pushy-submenu {
   /* Submenu Icon */ }
-  /* line 133, ../scss/pushy.scss */
+  /* line 138, ../scss/pushy.scss */
   .pushy-submenu ul {
     padding-left: 15px;
     transition: max-height 0.2s ease-in-out; }
-    /* line 137, ../scss/pushy.scss */
+    /* line 142, ../scss/pushy.scss */
     .pushy-submenu ul .pushy-link {
       transition: opacity 0.2s ease-in-out; }
-  /* line 144, ../scss/pushy.scss */
+  /* line 149, ../scss/pushy.scss */
   .pushy-submenu > a {
     position: relative; }
-  /* line 148, ../scss/pushy.scss */
+  /* line 153, ../scss/pushy.scss */
   .pushy-submenu > a::after {
     content: '';
     display: block;
@@ -135,30 +135,30 @@
     transition: transform 0.2s; }
 
 /* Submenu Movement */
-/* line 167, ../scss/pushy.scss */
+/* line 172, ../scss/pushy.scss */
 .pushy-submenu-closed ul {
   max-height: 0;
   overflow: hidden; }
-/* line 172, ../scss/pushy.scss */
+/* line 177, ../scss/pushy.scss */
 .pushy-submenu-closed .pushy-link {
   opacity: 0; }
 
-/* line 177, ../scss/pushy.scss */
+/* line 182, ../scss/pushy.scss */
 .pushy-submenu-open {
   /* Submenu Icon */ }
-  /* line 178, ../scss/pushy.scss */
+  /* line 183, ../scss/pushy.scss */
   .pushy-submenu-open ul {
     max-height: 1000px; }
-  /* line 182, ../scss/pushy.scss */
+  /* line 187, ../scss/pushy.scss */
   .pushy-submenu-open .pushy-link {
     opacity: 1; }
-  /* line 188, ../scss/pushy.scss */
+  /* line 193, ../scss/pushy.scss */
   .pushy-submenu-open a::after {
     -webkit-transform: translateY(-50%) rotate(90deg);
     -ms-transform: translateY(-50%) rotate(90deg);
     transform: translateY(-50%) rotate(90deg); }
 
-/* line 197, ../scss/pushy.scss */
+/* line 202, ../scss/pushy.scss */
 .no-csstransforms3d .pushy-submenu-closed ul {
   max-height: none;
   display: none; }
